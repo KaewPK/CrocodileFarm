@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CrocodileFarmModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_การสั่งซื้อ">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustID" Type="int" />
+          <Property Name="CustFirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustLastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CroID" Type="nvarchar" MaxLength="50" />
+          <Property Name="CroCategory" Type="nvarchar" MaxLength="50" />
+          <Property Name="CroPrice" Type="nvarchar" MaxLength="50" />
+          <Property Name="CroNum" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrderPrice" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="CrocodileFarmModel2StoreContainer">
+          <EntitySet Name="tbl_การสั่งซื้อ" EntityType="Self.tbl_การสั่งซื้อ" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CrocodileFarmModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_การส__งซ__อ">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustID" Type="Int32" />
+          <Property Name="CustFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustLastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CroID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CroCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CroPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CroNum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OrderPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="CrocodileFarmEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_การส__งซ__อ" EntityType="Self.tbl_การส__งซ__อ" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CrocodileFarmModel2StoreContainer" CdmEntityContainer="CrocodileFarmEntities3">
+          <EntitySetMapping Name="tbl_การส__งซ__อ">
+            <EntityTypeMapping TypeName="CrocodileFarmModel2.tbl_การส__งซ__อ">
+              <MappingFragment StoreEntitySet="tbl_การสั่งซื้อ">
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="CustID" ColumnName="CustID" />
+                <ScalarProperty Name="CustFirstName" ColumnName="CustFirstName" />
+                <ScalarProperty Name="CustLastName" ColumnName="CustLastName" />
+                <ScalarProperty Name="CroID" ColumnName="CroID" />
+                <ScalarProperty Name="CroCategory" ColumnName="CroCategory" />
+                <ScalarProperty Name="CroPrice" ColumnName="CroPrice" />
+                <ScalarProperty Name="CroNum" ColumnName="CroNum" />
+                <ScalarProperty Name="OrderPrice" ColumnName="OrderPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrocodileFarmModelStoreContainer" CdmEntityContainer="CrocodileFarmEntities">
+    <EntitySetMapping Name="tbl_ล_กค_า">
+      <EntityTypeMapping TypeName="CrocodileFarmModel.tbl_ล_กค_า">
+        <MappingFragment StoreEntitySet="tbl_ลูกค้า">
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="CustFirstName" ColumnName="CustFirstName" />
+          <ScalarProperty Name="CustLastName" ColumnName="CustLastName" />
+          <ScalarProperty Name="CustBDay" ColumnName="CustBDay" />
+          <ScalarProperty Name="CustPhone" ColumnName="CustPhone" />
+          <ScalarProperty Name="CustEmail" ColumnName="CustEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

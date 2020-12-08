@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A9B040D-9E70-476F-888E-5F39E293248D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cocodrilo_frame</RootNamespace>
+    <AssemblyName>cocodrilo frame</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>5bdaf67b3f8da.64px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="frm_ฝ่ายขาย%28แก้ไขสถานะ%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ฝ่ายขาย%28แก้ไขสถานะ%29.Designer.cs">
+      <DependentUpon>frm_ฝ่ายขาย%28แก้ไขสถานะ%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_เจ้าของฟาร์ม.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_เจ้าของฟาร์ม.Designer.cs">
+      <DependentUpon>frm_เจ้าของฟาร์ม.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ฝ่ายขาย%28ข้อมูลลูกค้า%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ฝ่ายขาย%28ข้อมูลลูกค้า%29.Designer.cs">
+      <DependentUpon>frm_ฝ่ายขาย%28ข้อมูลลูกค้า%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ฝ่ายการเงิน.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ฝ่ายการเงิน.Designer.cs">
+      <DependentUpon>frm_ฝ่ายการเงิน.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ฝ่ายจัดซื้ออาหารจระเข้.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ฝ่ายจัดซื้ออาหารจระเข้.Designer.cs">
+      <DependentUpon>frm_ฝ่ายจัดซื้ออาหารจระเข้.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ฝ่ายบัญชี.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ฝ่ายบัญชี.Designer.cs">
+      <DependentUpon>frm_ฝ่ายบัญชี.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ฝ่ายขาย%28การสั่งซื้อ%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ฝ่ายขาย%28การสั่งซื้อ%29.Designer.cs">
+      <DependentUpon>frm_ฝ่ายขาย%28การสั่งซื้อ%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ล็อคอินพนักงาน.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ล็อคอินพนักงาน.Designer.cs">
+      <DependentUpon>frm_ล็อคอินพนักงาน.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ผู้เลี้ยง.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ผู้เลี้ยง.Designer.cs">
+      <DependentUpon>frm_ผู้เลี้ยง.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การชำระเงิน.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การชำระเงิน.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การชำระเงิน.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การชำระเงิน.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การชำระเงิน.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การชำระเงิน.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การซื้ออาหารจระเข้.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การซื้ออาหารจระเข้.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การซื้ออาหารจระเข้.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การซื้ออาหารจระเข้.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การซื้ออาหารจระเข้.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การซื้ออาหารจระเข้.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การสั่งซื้อ.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การสั่งซื้อ.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การสั่งซื้อ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การสั่งซื้อ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_การสั่งซื้อ.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_การสั่งซื้อ.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model_จระเข้.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_จระเข้.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_จระเข้.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_จระเข้.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_จระเข้.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_จระเข้.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model_ลูกค้า.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_ลูกค้า.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_ลูกค้า.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_ลูกค้า.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_ลูกค้า.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_ลูกค้า.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model_ใบเสร็จ.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_ใบเสร็จ.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_ใบเสร็จ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_ใบเสร็จ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model_ใบเสร็จ.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_ใบเสร็จ.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Print_ใบเสร็จ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print_ใบเสร็จ.Designer.cs">
+      <DependentUpon>Print_ใบเสร็จ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report_กาซื้ออาหารจระเข้.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_กาซื้ออาหารจระเข้.Designer.cs">
+      <DependentUpon>Report_กาซื้ออาหารจระเข้.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_การชำระเงิน.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_การชำระเงิน.Designer.cs">
+      <DependentUpon>Report_การชำระเงิน.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_การสั่งซื้อ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_การสั่งซื้อ.Designer.cs">
+      <DependentUpon>Report_การสั่งซื้อ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_จระเข้.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_จระเข้.Designer.cs">
+      <DependentUpon>Report_จระเข้.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_ลูกค้า.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_ลูกค้า.Designer.cs">
+      <DependentUpon>Report_ลูกค้า.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_ใบเสร็จ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_ใบเสร็จ.Designer.cs">
+      <DependentUpon>Report_ใบเสร็จ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="tbl_การชำระเง_น.cs">
+      <DependentUpon>Model_การชำระเงิน.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_การซ__ออาหารจระเข_.cs">
+      <DependentUpon>Model_การซื้ออาหารจระเข้.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_การส__งซ__อ.cs">
+      <DependentUpon>Model_การสั่งซื้อ.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_จระเข_.cs">
+      <DependentUpon>Model_จระเข้.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ล_กค_า.cs">
+      <DependentUpon>Model_ลูกค้า.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ใบเสร_จ.cs">
+      <DependentUpon>Model_ใบเสร็จ.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_ฝ่ายขาย%28แก้ไขสถานะ%29.resx">
+      <DependentUpon>frm_ฝ่ายขาย%28แก้ไขสถานะ%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_เจ้าของฟาร์ม.resx">
+      <DependentUpon>frm_เจ้าของฟาร์ม.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ฝ่ายขาย%28ข้อมูลลูกค้า%29.resx">
+      <DependentUpon>frm_ฝ่ายขาย%28ข้อมูลลูกค้า%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ฝ่ายการเงิน.resx">
+      <DependentUpon>frm_ฝ่ายการเงิน.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ฝ่ายจัดซื้ออาหารจระเข้.resx">
+      <DependentUpon>frm_ฝ่ายจัดซื้ออาหารจระเข้.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ฝ่ายบัญชี.resx">
+      <DependentUpon>frm_ฝ่ายบัญชี.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ฝ่ายขาย%28การสั่งซื้อ%29.resx">
+      <DependentUpon>frm_ฝ่ายขาย%28การสั่งซื้อ%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ล็อคอินพนักงาน.resx">
+      <DependentUpon>frm_ล็อคอินพนักงาน.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ผู้เลี้ยง.resx">
+      <DependentUpon>frm_ผู้เลี้ยง.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print_ใบเสร็จ.resx">
+      <DependentUpon>Print_ใบเสร็จ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report_กาซื้ออาหารจระเข้.resx">
+      <DependentUpon>Report_กาซื้ออาหารจระเข้.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_การชำระเงิน.rdlc" />
+    <EmbeddedResource Include="Report_การชำระเงิน.resx">
+      <DependentUpon>Report_การชำระเงิน.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_การซื้ออาหารจระเข้.rdlc" />
+    <EmbeddedResource Include="Report_การสั่งซื้อ.rdlc" />
+    <EmbeddedResource Include="Report_การสั่งซื้อ.resx">
+      <DependentUpon>Report_การสั่งซื้อ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_จระเข้.rdlc" />
+    <EmbeddedResource Include="Report_จระเข้.resx">
+      <DependentUpon>Report_จระเข้.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_ลูกค้า.rdlc" />
+    <EmbeddedResource Include="Report_ลูกค้า.resx">
+      <DependentUpon>Report_ลูกค้า.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_ใบเสร็จ.rdlc" />
+    <EmbeddedResource Include="Report_ใบเสร็จ.resx">
+      <DependentUpon>Report_ใบเสร็จ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model_ลูกค้า.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_ลูกค้า.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model_จระเข้.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_จระเข้.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model_การสั่งซื้อ.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_การสั่งซื้อ.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model_การชำระเงิน.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_การชำระเงิน.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model_การชำระเงิน.edmx.diagram">
+      <DependentUpon>Model_การชำระเงิน.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model_การซื้ออาหารจระเข้.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_การซื้ออาหารจระเข้.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model_การซื้ออาหารจระเข้.edmx.diagram">
+      <DependentUpon>Model_การซื้ออาหารจระเข้.edmx</DependentUpon>
+    </None>
+    <None Include="Model_การสั่งซื้อ.edmx.diagram">
+      <DependentUpon>Model_การสั่งซื้อ.edmx</DependentUpon>
+    </None>
+    <None Include="Model_จระเข้.edmx.diagram">
+      <DependentUpon>Model_จระเข้.edmx</DependentUpon>
+    </None>
+    <None Include="Model_ลูกค้า.edmx.diagram">
+      <DependentUpon>Model_ลูกค้า.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model_ใบเสร็จ.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_ใบเสร็จ.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model_ใบเสร็จ.edmx.diagram">
+      <DependentUpon>Model_ใบเสร็จ.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\tbl_การชำระเง_น.datasource" />
+    <None Include="Properties\DataSources\tbl_การซ__ออาหารจระเข_.datasource" />
+    <None Include="Properties\DataSources\tbl_การส__งซ__อ.datasource" />
+    <None Include="Properties\DataSources\tbl_จระเข_.datasource" />
+    <None Include="Properties\DataSources\tbl_ล_กค_า.datasource" />
+    <None Include="Properties\DataSources\tbl_ใบเสร_จ.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="5bdaf67b3f8da.64px.ico" />
+    <Content Include="Model_การชำระเงิน.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_การชำระเงิน.edmx</DependentUpon>
+      <LastGenOutput>Model_การชำระเงิน.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_การชำระเงิน.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_การชำระเงิน.edmx</DependentUpon>
+      <LastGenOutput>Model_การชำระเงิน.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_การซื้ออาหารจระเข้.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_การซื้ออาหารจระเข้.edmx</DependentUpon>
+      <LastGenOutput>Model_การซื้ออาหารจระเข้.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_การซื้ออาหารจระเข้.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_การซื้ออาหารจระเข้.edmx</DependentUpon>
+      <LastGenOutput>Model_การซื้ออาหารจระเข้.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_การสั่งซื้อ.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_การสั่งซื้อ.edmx</DependentUpon>
+      <LastGenOutput>Model_การสั่งซื้อ.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_การสั่งซื้อ.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_การสั่งซื้อ.edmx</DependentUpon>
+      <LastGenOutput>Model_การสั่งซื้อ.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_จระเข้.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_จระเข้.edmx</DependentUpon>
+      <LastGenOutput>Model_จระเข้.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_จระเข้.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_จระเข้.edmx</DependentUpon>
+      <LastGenOutput>Model_จระเข้.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_ลูกค้า.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model_ลูกค้า.Context.cs</LastGenOutput>
+      <DependentUpon>Model_ลูกค้า.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model_ลูกค้า.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_ลูกค้า.edmx</DependentUpon>
+      <LastGenOutput>Model_ลูกค้า.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_ใบเสร็จ.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_ใบเสร็จ.edmx</DependentUpon>
+      <LastGenOutput>Model_ใบเสร็จ.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model_ใบเสร็จ.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_ใบเสร็จ.edmx</DependentUpon>
+      <LastGenOutput>Model_ใบเสร็จ.cs</LastGenOutput>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

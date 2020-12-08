@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CrocodileFarmModel5.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_การซื้ออาหารจระเข้">
+    <Key>
+      <PropertyRef Name="FoodID" />
+    </Key>
+    <Property Name="FoodID" Type="int" Nullable="false" />
+    <Property Name="FoodDate" Type="date" />
+    <Property Name="FoodOfood" Type="nvarchar" MaxLength="50" />
+    <Property Name="FoodNumber" Type="int" />
+    <Property Name="FoodPrice" Type="int" />
+  </EntityType>
+  <EntityContainer Name="CrocodileFarmModel5StoreContainer">
+    <EntitySet Name="tbl_การซื้ออาหารจระเข้" EntityType="Self.tbl_การซื้ออาหารจระเข้" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

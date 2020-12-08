@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrocodileFarmModel4StoreContainer" CdmEntityContainer="CrocodileFarmEntities5">
+    <EntitySetMapping Name="tbl_ใบเสร_จ">
+      <EntityTypeMapping TypeName="CrocodileFarmModel4.tbl_ใบเสร_จ">
+        <MappingFragment StoreEntitySet="tbl_ใบเสร็จ">
+          <ScalarProperty Name="BillID" ColumnName="BillID" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="PayID" ColumnName="PayID" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="CustFristName" ColumnName="CustFristName" />
+          <ScalarProperty Name="CustLastName" ColumnName="CustLastName" />
+          <ScalarProperty Name="CroID" ColumnName="CroID" />
+          <ScalarProperty Name="CroCategory" ColumnName="CroCategory" />
+          <ScalarProperty Name="CroPrice" ColumnName="CroPrice" />
+          <ScalarProperty Name="CroNum" ColumnName="CroNum" />
+          <ScalarProperty Name="OrderPrice" ColumnName="OrderPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrocodileFarmModel5StoreContainer" CdmEntityContainer="CrocodileFarmEntities6">
+    <EntitySetMapping Name="tbl_การซ__ออาหารจระเข_">
+      <EntityTypeMapping TypeName="CrocodileFarmModel5.tbl_การซ__ออาหารจระเข_">
+        <MappingFragment StoreEntitySet="tbl_การซื้ออาหารจระเข้">
+          <ScalarProperty Name="FoodID" ColumnName="FoodID" />
+          <ScalarProperty Name="FoodDate" ColumnName="FoodDate" />
+          <ScalarProperty Name="FoodOfood" ColumnName="FoodOfood" />
+          <ScalarProperty Name="FoodNumber" ColumnName="FoodNumber" />
+          <ScalarProperty Name="FoodPrice" ColumnName="FoodPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

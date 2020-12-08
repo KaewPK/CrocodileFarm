@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CrocodileFarmModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_การชำระเงิน">
+    <Key>
+      <PropertyRef Name="PayID" />
+    </Key>
+    <Property Name="PayID" Type="int" Nullable="false" />
+    <Property Name="PayDate" Type="date" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="CustID" Type="int" />
+    <Property Name="CustFirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustLastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CroID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CroCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="CroPrice" Type="nvarchar" MaxLength="50" />
+    <Property Name="CroNum" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderPrice" Type="nvarchar" MaxLength="50" />
+    <Property Name="PayStatus" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="CrocodileFarmModel3StoreContainer">
+    <EntitySet Name="tbl_การชำระเงิน" EntityType="Self.tbl_การชำระเงิน" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

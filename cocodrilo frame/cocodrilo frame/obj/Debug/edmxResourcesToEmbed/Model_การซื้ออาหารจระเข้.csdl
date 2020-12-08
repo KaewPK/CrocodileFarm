@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CrocodileFarmModel5" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_การซ__ออาหารจระเข_">
+    <Key>
+      <PropertyRef Name="FoodID" />
+    </Key>
+    <Property Name="FoodID" Type="Int32" Nullable="false" />
+    <Property Name="FoodDate" Type="DateTime" Precision="0" />
+    <Property Name="FoodOfood" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FoodNumber" Type="Int32" />
+    <Property Name="FoodPrice" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="CrocodileFarmEntities6" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_การซ__ออาหารจระเข_" EntityType="Self.tbl_การซ__ออาหารจระเข_" />
+  </EntityContainer>
+</Schema>
